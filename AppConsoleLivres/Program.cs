@@ -1,4 +1,5 @@
 ﻿using AppConsoleLivres;
+using System.Diagnostics;
 
 internal class Program
 {
@@ -19,5 +20,19 @@ internal class Program
         roman1.AfficherDetails();
         roman2.AfficherDetails();
         roman3.AfficherDetails();
+
+        List<Livre> livres = new List<Livre> ();
+        livres.Add (revue1);
+        livres.Add (revue2);
+        livres.Add (revue3);
+        livres.Add (roman1);
+        livres.Add(roman2);
+        livres.Add (roman3);
+        
+        foreach (Livre livre in livres)
+        {
+            livre.AfficherDetails();
+        }
+        
     }
 }
