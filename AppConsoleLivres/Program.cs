@@ -12,5 +12,12 @@ internal class Program
         revue2.AfficherDetails(); 
         revue3.AfficherDetails();
 
+        Roman roman1 = new Roman("Le cahier noir", "Camara Nangala", 260, "Classique");
+        Roman roman2 = new Roman("Les Frasques d'ebinto", "Amadou Kone", 316, "D'avanture");
+        Roman roman3 = new Roman("La Planete des Singes", "Pierre Boule", 190, "science fiction");
+
+        roman1.AfficherDetails();
+        roman2.AfficherDetails();
+        roman3.AfficherDetails();
     }
 }
